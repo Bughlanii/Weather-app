@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punjab 5-City Weather Hub"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Live"
+            android:textColor="#A0A0A0"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <!-- Grid / Layout items for 5 cities -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <!-- Row 1: Lahore -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/widget_city_1_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lahore (LHR)"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_1_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="☀️"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_1_temp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="--°C"
+                android:textColor="#FBE04E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 2: Rawalpindi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/widget_city_2_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rawalpindi (RWP)"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_2_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="☁️"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_2_temp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="--°C"
+                android:textColor="#FBE04E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 3: Karachi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/widget_city_3_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Karachi (KHI)"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_3_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="⛅"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_3_temp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="--°C"
+                android:textColor="#FBE04E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 4: Multan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/widget_city_4_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Multan (KHI)"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_4_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="☀️"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_4_temp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="--°C"
+                android:textColor="#FBE04E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 5: DG Khan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/widget_city_5_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="D.G. Khan (DGK)"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_5_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="☀️"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/widget_city_5_temp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="--°C"
+                android:textColor="#FBE04E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

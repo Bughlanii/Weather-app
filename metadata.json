@@ -1,0 +1,6 @@
+{
+  "name": "Smart Weather & Local Calendar Hub",
+  "description": "Smart Local Weather, CE + Hijri + Punjabi calendars, cultural festivals, and compact 5-city widget.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
